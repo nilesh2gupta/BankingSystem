@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_background"
+    tools:context=".HomePage">
+    <LinearLayout
+        android:id="@+id/lottis"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="500dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="WELCOME"
+            android:textSize="34dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:translationY="50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/bank"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/lottis"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="200dp">
+        <Button
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER"/>
+        <Button
+            android:id="@+id/transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW TRANSACTION"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
